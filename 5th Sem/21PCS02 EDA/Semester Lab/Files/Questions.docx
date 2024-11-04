@@ -1,0 +1,10 @@
+1.	Perform one sample and two sample hypothesis testing using uptake and treatment for the CO2 dataset.
+2.	Perform data preprocessing for the sales data.
+3.	Perform Data Summary and Exploration of  Groceries dataset and Generate association rules from the Groceries dataset with a minimum support of 0.002 and a confidence of 0.5?
+4.	Develop a Decision Tree model using R to classify iris species based on sepal and petal measurements. The task involves preprocessing the Iris dataset, selecting relevant features, and building a Decision Tree to differentiate between Setosa, Versicolor, and Virginica. The model's decision tree will be plotted for analysis
+5.	Develop K-Means clustering using R to group iris flowers based on sepal and petal measurements. The task involves preprocessing the Iris dataset, selecting relevant features, and applying K-Means clustering to identify natural groupings. The resulting clusters will be analyzed and visualized to understand species differentiation.
+6.	Perform various statistical analysis for the mtcars dataset.
+7.	Construct a barplot to interpret the prevalence of malaria over a period of 10 year and analyze.
+8.	Develop R code to perform outlier analysis using boxplot and Construct a histogram to interpret the car sales in a particular year and analyze the same.
+9.	Make use of  logistic regression to model the probability of admission based on GPA, and what insights can be drawn from the model summary regarding the significance and strength of GPA as a predictor of admission likelihood?
+10.	Perform trend analysis for the given sales data.
