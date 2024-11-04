@@ -1,4 +1,4 @@
-#4.Decision Tree
+#4.	Develop a Decision Tree model using R to classify iris species based on sepal and petal measurements. The task involves preprocessing the Iris dataset, selecting relevant features, and building a Decision Tree to differentiate between Setosa, Versicolor, and Virginica. The model's decision tree will be plotted for analysis
 
 iris_data<-read.csv("Iris.csv")
 head(iris_data)
