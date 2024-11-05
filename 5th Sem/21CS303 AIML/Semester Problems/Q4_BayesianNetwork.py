@@ -3,7 +3,7 @@ import numpy as np
 from pgmpy.models import BayesianNetwork
 from pgmpy.inference import VariableElimination
 from pgmpy.estimators import MaximumLikelihoodEstimator
-pd.read_csv("HeartDisease.csv")
+data=pd.read_csv("HeartDisease.csv")
 model=BayesianNetwork([
     ('age','heartdisease'),
     ('cp','heartdisease'),
