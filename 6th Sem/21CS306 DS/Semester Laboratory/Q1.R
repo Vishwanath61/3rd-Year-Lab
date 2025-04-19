@@ -1,4 +1,4 @@
-#Load the Titanic dataset using read.csv(), explore it with str(), summary(), and head(). 
+#1. Load the Titanic dataset using read.csv(), explore it with str(), summary(), and head(). 
 #Identify numerical/categorical variables and handle missing values by imputing with mean, median, or mode. 
 #Convert categorical data into factors, scale numerical features, engineer new features, and save the preprocessed data using write.csv().
 
