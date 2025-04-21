@@ -14,26 +14,26 @@ summary(titanic)
 head(titanic)
 
 #3. Handling Missing Values
+titanic[titanic == ""] <- NA
 colSums(is.na(titanic))
 
 titanic$Age[is.na(titanic$Age)] <- median(titanic$Age, na.rm = TRUE)
 
 mode_embarked <- names(sort(table(titanic$Embarked), decreasing = TRUE))[1]
-titanic$Embarked[titanic$Embarked == ""] <- mode_embarked
+titanic$Embarked[is.na(titanic$Embarked)] <- mode_embarked
+colSums(is.na(titanic))
 
 titanic <- titanic %>% select(-Cabin)
 
 head(titanic)
 
 #4. Conversion of categorical data (Survived, Pclass, Sex, Embarked)
-titanic$Survived <- as.factor(titanic$Survived)
-titanic$Pclass <- as.factor(titanic$Pclass)
-titanic$Sex <- as.factor(titanic$Sex)
-titanic$Embarked <- as.factor(titanic$Embarked)
+cat_cols <- c("Survived", "Pclass", "Sex", "Embarked")
+titanic[cat_cols] <- lapply(titanic[cat_cols], as.factor)
 
 #5. Scaling numerical features
-titanic$Age <- scale(titanic$Age)
-titanic$Fare <- scale(titanic$Fare)
+titanic$Age_scaled <- scale(titanic$Age)
+titanic$Fare_scaled <- scale(titanic$Fare)
 
 #6. Engineer new features
 titanic$familySize <- titanic$SibSp + titanic$Parch + 1
